@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">IML</string>
+    <string-array name="comunas">
+        <item>Cerrillos</item>
+        <item>Cerro Navia</item>
+        <item>Conchalí</item>
+        <item>El Bosque</item>
+        <item>Huechuraba</item>
+        <item>Independencia</item>
+        <item>La Cisterna</item>
+        <item>La Florida</item>
+        <item>La Granja</item>
+        <item>La Pintana</item>
+        <item>La Reina</item>
+        <item>Las Condes</item>
+        <item>Lo Barnechea</item>
+        <item>Lo Espejo</item>
+        <item>Lo Prado</item>
+        <item>Macul</item>
+        <item>Maipú</item>
+        <item>Ñuñoa</item>
+        <item>Padre Hurtado</item>
+        <item>Pedro Aguirre Cerda</item>
+        <item>Peñalolén</item>
+        <item>Pirque</item>
+        <item>Providencia</item>
+        <item>Pudahuel</item>
+        <item>Puente Alto</item>
+        <item>Quilicura</item>
+        <item>Quinta Normal</item>
+        <item>Recoleta</item>
+        <item>Renca</item>
+        <item>San Bernardo</item>
+        <item>San Joaquín</item>
+        <item>San José de Maipo</item>
+        <item>San Miguel</item>
+        <item>San Ramón</item>
+        <item>Santiago</item>
+
+    </string-array>
+</resources>

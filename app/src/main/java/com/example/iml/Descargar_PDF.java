@@ -1,6 +1,9 @@
 package com.example.iml;
 
+import android.app.DownloadManager;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +44,7 @@ public class Descargar_PDF extends AppCompatActivity {
 
     List<PDF> pdfList;
 
+    DownloadManager downloadManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +89,12 @@ public class Descargar_PDF extends AppCompatActivity {
                             progressDialog.setMessage("Descargando PDF...");
 
                             new DescargarPDFAsyncTask(progressDialog).execute(urlADescargar);
+
+                            downloadManager=(DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE);
+                            Uri uri=Uri.parse(urlADescargar);
+                            DownloadManager.Request request=new DownloadManager.Request(uri);
+                            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                            Long reference=downloadManager.enqueue(request);
                         }
                     });
 

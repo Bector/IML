@@ -16,4 +16,7 @@ public class FuncionalidadMenu extends AppCompatActivity {
     public void irPDF(View V){
         startActivity(new Intent(FuncionalidadMenu.this,Descargar_PDF.class));
     }
+    public void irNoticias(View V){
+        startActivity(new Intent(FuncionalidadMenu.this,VerNoticias.class));
+    }
 }

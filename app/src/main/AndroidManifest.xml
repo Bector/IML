@@ -14,12 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FuncionalidadMenu"></activity>
+        <activity android:name=".VerNoticias"></activity>
+        <activity android:name=".detalles"></activity>
+        <activity android:name=".FuncionalidadMenu" />
         <activity android:name=".Descargar_PDF" />
-        <activity android:name=".actividad_login"
+        <activity
+            android:name=".actividad_login"
             android:label="Inicio de sesion">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
